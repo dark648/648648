@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "宋体";
+        }
+        dl{
+            width: 730px;
+            height: 454px;
+            background-color: red;
+            position: relative;/*设置父元素(定位包含框)的定位模式为相对定位*/
+            margin: 30px auto 0 auto;
+        }
+        dt{
+            width: 130px;
+            position: absolute;/*设置子元素定位模式为绝对定位*/
+            right: 5px;/*距离右边框线多远*/
+            bottom: 10px;
+        }
+        a{
+            border: 2px solid green;
+            background: #ccc;
+            display: block;
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-left: 8px;
+            line-height: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+            background-color: white;
+        }
+        dd{
+            widows: 730px;
+            height: 454px;
+            overflow: hidden;/*dd中被的位置只够一张图片，其余三张为溢出，需要靠这个属性，隐藏溢出*/
+        }
+
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>
+            <a href="#img1">1</a>
+            <a href="#img2">2</a>
+            <a href="#img3">3</a>
+            <a href="#img4">4</a>
+        </dt>
+        <dd>
+            <img src="images/1.jpg"id="img1">
+            <img src="images/2.jpg"id="img2">
+            <img src="images/3.jpg"id="img3">
+            <img src="images/4.jpg"id="img4">
+        </dd>
+    </dl>
+</body>
+</html>
